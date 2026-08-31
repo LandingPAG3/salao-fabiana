@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F1ED; 
+    color: #2C2A29;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+header {
+    background-color: #F4F1ED;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: 'Cinzel', serif; 
+    color: #2C2A29;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 5px;
+    color: #7A746E;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center top;
+    padding: 140px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(25, 24, 23, 0.70); 
+    z-index: 1;
+}
+
+.hero-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.acento-script {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 38px;
+    color: #D4BBA5; 
+    display: block;
+    margin-bottom: -10px;
+}
+
+.hero h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #E8E1D9;
+}
+
+.botao-whatsapp {
+    background-color: transparent;
+    color: #D4BBA5;
+    border: 1px solid #D4BBA5;
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #D4BBA5;
+    color: #2C2A29;
+}
+
+/* Seção Sobre Mim */
+.sobre {
+    background-color: #FFFFFF;
+    padding: 80px 20px;
+}
+
+.sobre-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sobre-imagem {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-texto h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2C2A29;
+}
+
+.sobre-texto p {
+    font-size: 15px;
+    color: #7A746E;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+/* Seção de Serviços */
+.servicos {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.acento-script-escuro {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 34px;
+    color: #7A746E;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.servicos h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    color: #2C2A29;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.04);
+}
+
+.card-img {
+    height: 400px; 
+    background-size: cover;
+    background-position: center;
+}
+
+.card-texto {
+    padding: 30px;
+}
+
+.card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2C2A29;
+}
+
+.card p {
+    font-size: 14px;
+    color: #7A746E;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Rodapé */
+.contato {
+    background-color: #232221;
+    color: #F4F1ED;
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-family: 'Cinzel', serif;
+    margin-bottom: 25px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.contato-info p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    color: #BDB7B2;
+}
+
+.mapa {
+    max-width: 800px;
+    margin: 40px auto 0;
+    filter: grayscale(80%) contrast(1.2); 
+}
