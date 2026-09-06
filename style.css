@@ -231,3 +231,20 @@ header {
     margin: 40px auto 0;
     filter: grayscale(80%) contrast(1.2); 
 }
+.servicos { text-align: center; padding: 50px 20px; }
+.botoes-servicos { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 25px; }
+.btn-zap { 
+  background-color: #25D366; 
+  color: white; 
+  padding: 15px 30px; 
+  text-decoration: none; 
+  border-radius: 30px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; 
+  transition: all 0.3s ease; 
+}
+.btn-zap:hover { 
+  background-color: #128C7E; 
+  transform: translateY(-5px); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
