@@ -1,250 +1,340 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #F4F1ED; 
-    color: #2C2A29;
-    font-family: 'Montserrat', sans-serif; 
+  background-color: #121212;
+  color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #F4F1ED;
-    padding: 30px 20px;
-    text-align: center;
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  background-color: #121212;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
 
-.logo h1 {
-    font-family: 'Cinzel', serif; 
-    color: #2C2A29;
-    font-size: 32px;
-    letter-spacing: 2px;
+header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: #D4AF37;
+  text-transform: uppercase;
 }
 
-.logo p {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 5px;
-    color: #7A746E;
+header p {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #A0A0A0;
+  margin-top: 5px;
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
-    background-size: cover;
-    background-position: center top;
-    padding: 140px 20px;
-    text-align: center;
-    color: #FFFFFF;
+  position: relative;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .hero-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(25, 24, 23, 0.70); 
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.75);
 }
 
 .hero-conteudo {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-    margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
 }
 
 .acento-script {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 38px;
-    color: #D4BBA5; 
-    display: block;
-    margin-bottom: -10px;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 36px;
+  color: #D4AF37;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .hero h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 42px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+  font-family: 'Cinzel', serif;
+  font-size: 38px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .hero p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.8;
-    margin-bottom: 40px;
-    color: #E8E1D9;
+  font-size: 15px;
+  color: #CCCCCC;
+  margin-bottom: 35px;
+  font-weight: 300;
 }
 
 .botao-whatsapp {
-    background-color: transparent;
-    color: #D4BBA5;
-    border: 1px solid #D4BBA5;
-    text-decoration: none;
-    padding: 15px 35px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: 0.4s;
+  display: inline-block;
+  padding: 16px 36px;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  background: transparent;
 }
 
 .botao-whatsapp:hover {
-    background-color: #D4BBA5;
-    color: #2C2A29;
+  background: #D4AF37;
+  color: #121212;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
-/* Seção Sobre Mim */
-.sobre {
-    background-color: #FFFFFF;
-    padding: 80px 20px;
-}
-
-.sobre-container {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.sobre-imagem {
-    flex: 1;
-    min-width: 300px;
-}
-
-.sobre-imagem img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
-}
-
-.sobre-texto {
-    flex: 1;
-    min-width: 300px;
-}
-
-.sobre-texto h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #2C2A29;
-}
-
-.sobre-texto p {
-    font-size: 15px;
-    color: #7A746E;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    font-weight: 300;
-}
-
-/* Seção de Serviços */
+/* Serviços */
 .servicos {
-    padding: 90px 20px;
-    text-align: center;
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.acento-script-escuro {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 34px;
-    color: #7A746E;
-    display: block;
-    margin-bottom: -5px;
-}
-
-.servicos h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 32px;
-    color: #2C2A29;
-    margin-bottom: 50px;
+.servicos h2, .avaliacoes h2, .agendamento h2, .contato-info h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-weight: 400;
 }
 
 .cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .card {
-    background-color: #FFFFFF;
-    width: 320px;
-    text-align: left;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.04);
+  background: #1A1A1A;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+  transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 175, 55, 0.4);
 }
 
 .card-img {
-    height: 400px; 
-    background-size: cover;
-    background-position: center;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.7s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.06);
 }
 
 .card-texto {
-    padding: 30px;
+  padding: 30px;
+  text-align: left;
 }
 
-.card h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #2C2A29;
+.card-texto h3 {
+  font-family: 'Cinzel', serif;
+  color: #D4AF37;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.card p {
-    font-size: 14px;
-    color: #7A746E;
-    line-height: 1.6;
-    font-weight: 300;
+.card-texto p {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-/* Rodapé */
+/* Avaliações (Google Social Proof) */
+.avaliacoes {
+  background: #161616;
+  padding: 100px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.subtitulo-avaliacoes, .subtitulo-agendamento {
+  font-size: 13px;
+  color: #D4AF37;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.avaliacoes-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.avaliacao-card {
+  background: #1D1D1D;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  padding: 35px 25px;
+  width: 100%;
+  max-width: 360px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+}
+
+.avaliacao-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.estrelas {
+  color: #D4AF37;
+  font-size: 16px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.texto-depoimento {
+  font-size: 14px;
+  color: #DDDDDD;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-inicial {
+  width: 40px;
+  height: 40px;
+  background: #282828;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.autor strong {
+  display: block;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.autor span {
+  font-size: 11px;
+  color: #888888;
+}
+
+/* Agendamento & Botões Luxo */
+.agendamento {
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.botoes-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-luxo {
+  background: transparent;
+  color: #E5E5E5;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  padding: 18px 32px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  min-width: 220px;
+  display: inline-block;
+}
+
+.btn-luxo:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: #D4AF37;
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.15);
+}
+
+/* Footer / Contato */
 .contato {
-    background-color: #232221;
-    color: #F4F1ED;
-    padding: 80px 20px 40px;
-    text-align: center;
-}
-
-.contato h2 {
-    font-family: 'Cinzel', serif;
-    margin-bottom: 25px;
-    font-size: 26px;
-    letter-spacing: 1px;
+  background: #0A0A0A;
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .contato-info p {
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 12px;
-    color: #BDB7B2;
+  color: #AAAAAA;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 300;
 }
 
 .mapa {
-    max-width: 800px;
-    margin: 40px auto 0;
-    filter: grayscale(80%) contrast(1.2); 
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  filter: grayscale(80%) invert(90%) contrast(1.2);
+  transition: filter 0.5s ease;
 }
-.servicos { text-align: center; padding: 50px 20px; }
-.botoes-servicos { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 25px; }
-.btn-zap { 
-  background-color: #25D366; 
-  color: white; 
-  padding: 15px 30px; 
-  text-decoration: none; 
-  border-radius: 30px; 
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold; 
-  transition: all 0.3s ease; 
+
+.mapa:hover {
+  filter: grayscale(0%) invert(0%) contrast(1);
 }
-.btn-zap:hover { 
-  background-color: #128C7E; 
-  transform: translateY(-5px); 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  .hero h2 { font-size: 28px; }
+  .acento-script { font-size: 28px; }
+  .btn-luxo { width: 100%; }
 }
